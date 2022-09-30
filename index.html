@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/com.css">
 
     <!-- Título da Página -->
-    <title>Aviãozinho</title>
+    <title>Cartas</title>
     
     <style type="text/css">
       body {
@@ -47,32 +47,220 @@ kwaiq.page();
 
 
   </head>
-  <body>
-    
-    <header class="py-4">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <!-- Imagem Ultrasecreto -->
-            <img class="img-fluid" src="./assets/img/ultrasecreto.png">
-
-            <!-- Headline -->
-            <!--h3 class="my-4"><b>Robô do Aviãozinho por R$9,90</b></h3>
+  
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: red;
+            padding: 8px;
+        }
+        .header p {
+            margin: 0;
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .container {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('https://acordamudanca.fun/assets/ARFYlv9377551.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        .container .title {
+            margin: 0;
+            padding: 15px 5px 0 5px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .container .subheadline {
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            margin: 16px 4px 0 4px;
+            font-weight: bold;
+        }
+        .container .checkout {
+            font-size:20px;
+            font-weight:700;
+            text-transform:uppercase;
+            text-shadow:43px 32px 28px #11721e;
+            background:#00dd00;
+            border-radius:10px;
+            box-shadow:0 0 20px 0 #11721e;
+            padding:18px;
+            color:#fff;
+            text-decoration:none;
+            margin:1.5vw 12px;
+            text-align:center;
+            box-sizing:border-box;
+            -webkit-animation:pulsing 1s infinite cubic-bezier(.77,0,0,1);
+            -moz-animation:pulsing 1s infinite cubic-bezier(.77,0,0,1);
+            -ms-animation:pulsing 1s infinite cubic-bezier(0.77,0,0,1);
+            animation:pulsing 1s infinite cubic-bezier(.77,0,0,1);
+        }
+        .sound-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .sound-container p {
+            color: white;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .container-2 {
+            display: flex;
+            flex-direction: column;
+            background: black;
+            align-items: center;
+        }
+        .container-2 p.title {
+            color: white;
+            margin-top: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+        .container-2 .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #11721e;
+            width: 92%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .container-2 .card .title-card {
+            color: white;
+            font-size: 20px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .container-2 .card .description-card {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .container-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container-3 .title {
+            margin: 15px 0 0 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .container-3 .discount {
+            margin: 10px 0 0 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .container-3 img {
+            width: 50%;
+            margin: 10px 0;
+        }
+        .container-3 .checkout {
+            font-size:20px;
+            font-weight:700;
+            text-transform:uppercase;
+            text-shadow:43px 32px 28px #11721e;
+            background:#00dd00;
+            border-radius:10px;
+            box-shadow:0 0 20px 0 #11721e;
+            padding:18px;
+            color:#fff;
+            text-decoration:none;
+            margin:1.5vw 12px;
+            text-align:center;
+            box-sizing:border-box;
+            -webkit-animation:pulsing 1s infinite cubic-bezier(.77,0,0,1);
+            -moz-animation:pulsing 1s infinite cubic-bezier(.77,0,0,1);
+            -ms-animation:pulsing 1s infinite cubic-bezier(0.77,0,0,1);
+            animation:pulsing 1s infinite cubic-bezier(.77,0,0,1);
+        }
+        .container-4 {
+            display: flex;
+            flex-direction: column;
+            width: 92%;
+            margin: 20px auto 0 auto;
+        }
+        .container-4 .title {
+            font-weight: 600;
+            font-size: 12px;
+        }
+        .container-4 .checkout {
+            font-size:20px;
+            font-weight:700;
+            text-transform:uppercase;
+            text-shadow:43px 32px 28px #11721e;
+            background:#00dd00;
+            border-radius:10px;
+            box-shadow:0 0 20px 0 #11721e;
+            padding:18px;
+            color:#fff;
+            text-decoration:none;
+            margin:1.5vw 12px;
+            text-align:center;
+            box-sizing:border-box;
+            -webkit-animation:pulsing 1s infinite cubic-bezier(.77,0,0,1);
+            -moz-animation:pulsing 1s infinite cubic-bezier(.77,0,0,1);
+            -ms-animation:pulsing 1s infinite cubic-bezier(0.77,0,0,1);
+            animation:pulsing 1s infinite cubic-bezier(.77,0,0,1);
+        }
+        .container .vsl{
+            width:95%;
+            box-shadow:0 0 10px 0 #f42f2f;
+            border-radius:6px;
+            margin: 15px 0 10px 0;
+        }
+        .container .vsl .smartplayer-blocked{
+            border-radius:6px;
+        }
+        @-webkit-keyframes pulsing{to{box-shadow:0 0 0 30px rgba(232,76,61,0)}}@-moz-keyframes pulsing{to{box-shadow:0 0 0 30px rgba(232,76,61,0)}}@-ms-keyframes pulsing{to{box-shadow:0 0 0 30px rgba(232,76,61,0)}}@keyframes pulsing{to{box-shadow:0 0 0 30px rgba(232,76,61,0)}}
+    </style>
+  
+  <body oncontextmenu="return false;">
+        <div class="header">
+            <p>Você e só mais <b>2 pessoas</b> hoje foram selecionadas para <b>assistir a esse vídeo</b></p>
+        </div>
+        <div class="container">
+            <p class="title">Descubra agora como esse <font color="#ff0000">novo aplicativo americano</font> multiplica R$10 em <span style="background: green">até R$1000 em alguns minutos</span></p>
+            <p class="subheadline">Assista o video abaixo e multiplique o seu dinheiro ainda hoje</p>
 
             <!-- VSL -->
-           <!--<div id="vid_632000548dfc5d000bad2788" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_632000548dfc5d000bad2788" src="https://images.converteai.net/7ba8c62e-1963-4c82-93aa-071724a232c9/players/632000548dfc5d000bad2788/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_632000548dfc5d000bad2788" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_632000548dfc5d000bad2788">var s=document.createElement("script");s.src="https://scripts.converteai.net/7ba8c62e-1963-4c82-93aa-071724a232c9/players/632000548dfc5d000bad2788/player.js",s.async=!0,document.head.appendChild(s);</script>
+           <div id="vid_632000548dfc5d000bad2788" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_632000548dfc5d000bad2788" src="https://images.converteai.net/7ba8c62e-1963-4c82-93aa-071724a232c9/players/632000548dfc5d000bad2788/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_632000548dfc5d000bad2788" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_632000548dfc5d000bad2788">var s=document.createElement("script");s.src="https://scripts.converteai.net/7ba8c62e-1963-4c82-93aa-071724a232c9/players/632000548dfc5d000bad2788/player.js",s.async=!0,document.head.appendChild(s);</script>
 
             <!-- Botão -->
             <div id="cta1" class="mt-4 d-none atrasado">
               <a href="https://checkout.mycheckout.com.br/checkout/63316f8edf6c2e4c638de551" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">QUERO O ROBÔ DO AVIÃOZINHO POR R$9,00</span>
+                <span class="span-btn">QUERO O ROBÔ DAS CARTAS POR R$9,00</span>
                 <span class="span-btn2">(últimas 5 vagas)</span>
               </a>
             </div>
-
+<br>
+            <br>
+            
             <!-- Termos de Uso e Política de Privacidade -->
-            <div class="text-white mt-4"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
-          </div>
+        <div class="text-white mt-4"><class="text-white">A venda do ”Cartas Milionárias” só pode ser realizada através desse site, qualquer outro site onde você encontre este programa é uma (FALSIFICAÇÃO) e vai contra as leis, evite falsificações e recuse conteúdos ilegais ou pirateados, não adquira programas parecidos, não nos responsabilizamos por compras realizadas em outros sites.=" </div>
         </div>
       </div>
     </header>
